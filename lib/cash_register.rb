@@ -33,7 +33,7 @@ def apply_discount(discount)
 end
 
 def items
-  puts @list
+  @list
 end
 
 def void_last_transaction
