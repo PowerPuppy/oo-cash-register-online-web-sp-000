@@ -27,7 +27,7 @@ def apply_discount(discount)
   @total = self.total*(1+(discount.to_f/100))
   if discount == 20
     "After the discount, the total comes to $#{self.total}."
-  else
+  elsif discount == 0
     puts "There is no discount to apply."
   end
 end
