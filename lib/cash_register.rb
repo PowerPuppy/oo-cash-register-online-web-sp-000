@@ -16,7 +16,7 @@ end
 
 def add_item(title, price,quantity=1)
   self.total += (price*quantity)
-  @list << {:(title)]=>[price*quanity}
+  # @list << {:(title)]=>[price*quanity}
 
 end
 
