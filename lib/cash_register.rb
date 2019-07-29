@@ -23,8 +23,8 @@ def add_item(title, price,quantity=1)
 end
 
 def apply_discount
-  @total = self.total*(1-(@discount.to_f/100))
   if discount == 20
+    @total = self.total*(1-(@discount.to_f/100))
     "After the discount, the total comes to $#{self.total}."
   elsif discount == 0
     puts "There is no discount to apply."
