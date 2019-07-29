@@ -38,7 +38,7 @@ end
 
 def void_last_transaction
   @total = self.total - self.last_price.last
-  @last = self.last
+  self.last_price.pop
 end
 
 end
