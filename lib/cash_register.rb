@@ -17,8 +17,8 @@ end
 
 def add_item(title, price,quantity=1)
   self.total += (price*quantity)
-   @list << title
-   @last_price << (price*quantity)
+   quantity.times{@list << title}
+   quantity.times{@last_price << price}
 
 end
 
