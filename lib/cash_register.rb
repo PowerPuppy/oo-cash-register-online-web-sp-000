@@ -3,9 +3,8 @@ require 'pry'
 class CashRegister
 attr_accessor :total, :discount
 
-EMPLOYEE_DISCOUNT = 20%
 
-def initialize(discount=EMPLOYEE_DISCOUNT)
+def initialize(discount=20)
   @total = 0
 end
 
