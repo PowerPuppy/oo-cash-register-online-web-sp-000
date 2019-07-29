@@ -38,9 +38,9 @@ end
 
 def void_last_transaction
   @total -= @last_price.last
-  @total
   @last_price.pop
   @list.pop
+  @total
 end
 
 end
