@@ -39,7 +39,7 @@ def void_last_transaction
   @total -= @last_price.last
   @last_price.delete_at(-1)
   @list.delete_at(-1)
-  @total.
+  @total
 end
 
 end
