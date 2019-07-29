@@ -26,8 +26,8 @@ def apply_discount
   if @discount == 0
     "There is no discount to apply."
   else
-    @total = self.total*(1-(@discount.to_f/100))
-    "After the discount, the total comes to $#{@total}."
+    @total = self.total*(1-(@discount./100))
+    "After the discount, the total comes to $#{@total.}."
   end
 end
 
@@ -39,7 +39,7 @@ def void_last_transaction
   @total -= @last_price.last
   @last_price.delete_at(-1)
   @list.delete_at(-1)
-  @total.to_f
+  @total.
 end
 
 end
