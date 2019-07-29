@@ -37,9 +37,9 @@ def items
 end
 
 def void_last_transaction
-  @total -= self.last_price.last_price
-  self.last_price.pop
-  self.list.pop
+  @total -= @last_price.last_price
+  @last_price.pop
+  @list.pop
 end
 
 end
