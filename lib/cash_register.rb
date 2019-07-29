@@ -32,7 +32,6 @@ end
 
 def items
   @list
-
 end
 
 end
