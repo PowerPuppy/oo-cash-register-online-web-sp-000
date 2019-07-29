@@ -8,6 +8,7 @@ def initialize(discount=20)
   @total = 0
   @discount = discount
   @list = []
+  @last_price = []
 end
 
 def total
@@ -17,7 +18,7 @@ end
 def add_item(title, price,quantity=1)
   self.total += (price*quantity)
    @list << title
-   @last << (price*quantity)
+   @last_price << (price*quantity)
 
 end
 
@@ -36,8 +37,8 @@ def items
 end
 
 def void_last_transaction
-  @total = self.total - self.last.pop
-  @last = self.last.last
+  @total = self.total - self.last_price.last
+  @last = self.last
 end
 
 end
