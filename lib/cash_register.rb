@@ -20,8 +20,11 @@ def add_item(title, price,quantity=1)
 
 end
 
-def apply_discount
-
+def apply_discount(discount)
+  @discount = discount
+  @total = self.total*(1+(discount/100))
+  if discount == 20
+    puts ""
 end
 
 end
